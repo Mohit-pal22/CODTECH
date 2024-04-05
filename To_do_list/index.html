@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./style.css">
+    <title>To Do List</title>
+</head>
+<body>
+    <header>
+        <div>To Do List</div>
+        <img src="./pictures/notepad.png" height="55px" alt="">
+    </header>
+
+    <main>
+        <div class="add-task">
+            <input class="input" type="text" placeholder="Add task">
+            <button onclick="addTask()" class="add">Add</button>
+        </div>
+        <div class="to-do-list">
+            <div class="task-list">
+                    <ul class="list">
+                    </ul>
+            </div>
+        </div>
+    </main>    
+
+    <script src="./script.js"></script>
+</body>
+</html>

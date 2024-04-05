@@ -1,0 +1,128 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    height: 100vh;
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+}
+
+header
+{
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    background-color: #070606;
+    color: #3d68f7;
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: #00000070 3px 4px 5px;
+}
+
+.search
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    
+    input
+    {
+        height: 2.5rem;
+        width: 20rem;
+        border: none;
+        border-radius: 15px;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    button
+    {
+        text-decoration: none;
+        background-color: transparent;
+        border: none;
+        font-size: 2rem;
+        margin-left: 5px;
+        color: #fff;
+    }
+}
+
+.container
+{
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    main
+    {
+        margin-top: 85px;
+        padding : 0px;
+        border: 2px solid #fff;
+        border-radius: 16px;
+        padding: 10px;
+        height: 25rem;
+        width: 35rem;
+        text-align: center;
+        color: #fff;
+
+        h1{ margin-top: 15px;}
+        .container2
+        {
+            position: relative;
+            margin: 55px 35px;
+            height: 40vh;
+            border-radius: 18px;
+            color: #3d68f7;
+            /* background-image: linear-gradient(to right, #fa709a 0%, #fee140 100%); */
+
+            .temperature
+            { 
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;  
+                top: 10px; 
+                font-size: 2rem;
+                color: #fff;
+                img{ height: 60px;}}
+                
+            .wind
+            {
+                height: 85px;
+                position: absolute;
+                bottom: 55px;
+                left: 85px;
+                padding: 16px;
+                border-radius: 10px;
+                font-weight: lighter;
+                font-size: 1.3rem;
+                color: #fff;
+            }
+            
+            .humidity1
+            {
+                height: 85px;
+                position: absolute;
+                bottom: 55px;
+                right: 85px;
+                padding: 16px;
+                border-radius: 10px;
+                font-weight: lighter;
+                font-size: 1.3rem;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.error
+{
+    display: none;
+    justify-content: center;
+    margin: 10px;
+    font-weight: 700;
+    color: white;
+}

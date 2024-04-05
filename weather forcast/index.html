@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./styles.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+    <header>Weather Forecast</header>
+    <div class="search">
+        <input type="text" placeholder="Search">
+        <button><i class='bx bx-search-alt-2'></i></button>
+    </div>
+    <div class="error">Invalid Name</div>
+    <div class="container">
+        <main>
+            <h1 class="city">---</h1>
+            <div class="container2">
+                <div class="temperature">
+                    <img class="weather-icon" src="./images/clear.png" alt="image">
+                    <span class="temp">°C</span>
+                </div>
+                <div class="wind">
+                    <span class="top"><i class='bx bx-wind'></i></span>
+                    <span class="windSpeed">km/h</span>
+                    <div>Wind Speed</div>
+                </div>
+                <div class="humidity1">
+                    <span class="top"><i class='bx bxs-hot'></i></span>
+                    <span class="humidity">%</span>
+                    <div>Humidity</div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>

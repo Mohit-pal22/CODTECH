@@ -1,0 +1,170 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --dark: #029ffa;
+}
+
+
+header
+{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    height: 9vh;
+    div
+    {
+        display: flex;
+        align-items: center;
+        color: #fff;
+        font-weight: bolder;
+        font-size: 2rem;      
+    }
+
+    /* NoteBook image */
+    img
+    {
+        display: flex;
+        position: absolute;
+        right: 10px;
+        background-color: #fff;
+        padding: 2px;
+        border-radius: 6px;
+    }
+}
+
+main
+{
+    height: 91vh;
+    width: 100vw;
+    background-color: #000;
+}
+
+.add-task
+{
+    display: flex;
+    justify-content: center;
+    align-items: bottom;
+    height: 25vh;
+
+    input
+    {
+        margin: 55px 0;
+        text-decoration: none;
+        border: 2px solid black;
+        border-radius: 15px;
+        padding: 15px;
+        height: 3rem;
+        font-size: 16px;
+    }
+    
+    button
+    {
+        margin: 55px 0;
+        background-color: var(--dark);
+        border: none;
+        outline: 2px solid;
+        outline-offset: -3px;
+        margin-left: 15px;
+        border-radius: 50px;
+        font-size: 18px;
+        font-weight: 700;
+        color: #fff;
+        height: 3rem;
+        width: 5rem;
+    }
+}
+
+.to-do-list
+{
+    margin: 5px auto;
+    padding: 10px;
+    width: 65vw;
+    height: 55vh;
+    background-color: #111111;
+    color: #fff;
+    border-radius: 15px;
+    border: 3px solid;
+}
+
+.task-list
+{
+    padding: 5px;
+    margin: 15px;
+    list-style-position: inside;
+
+    .list
+    {
+        overflow-y: scroll;
+        height: 45vh;
+
+        li
+        {
+            display: flex;
+            align-items: center;
+            height: 2.5rem;
+            list-style-type: none;
+            list-style-image: url();
+            margin: 8px 10px;
+            border-radius: 15px;
+            position: relative;
+            background-color: #fff;
+            color: #000000;
+        }
+
+        li::before
+        {
+            content: "";
+            position: relative;
+            display: inline-flex;
+            margin-right: 8px;
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            background-image: url("./pictures/unchecked.png");
+            background-size: cover;
+            background-position: center;
+        }
+
+        li.checked
+        {
+            text-decoration: line-through;
+        }
+        li.checked::before
+        {
+            background-image: url("./pictures/checked.png");
+        }
+        li:hover
+        {
+            opacity: 0.8;
+            background-color: var(--dark);
+        }
+    }
+    
+    i
+    {
+        position: absolute;
+        right: 0;
+        color: #000;
+        font-size: 30px;
+    }
+
+    i:hover
+    {
+        opacity: 1;
+        background-color: #000;
+        border-radius: 50%;
+        color: #fff;
+    }
+}
+
+
+
+
+
